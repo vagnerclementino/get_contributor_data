@@ -11,7 +11,7 @@ import sys
 from datetime import datetime
 import os
 import argparse
-import ipdb as pdb
+#import ipdb as pdb
 
 
 def parse_args():
@@ -75,7 +75,7 @@ def print_message(message):
     print(('[{0}] {1}'.format(str_date, message)))
 
 try:
-    pdb.set_trace()
+    # pdb.set_trace()
     config = configparser.ConfigParser()
     config.read_file(open(('./conf/get_contribuitor_data.ini')))
     api_token = config.get('API_TOKEN', 'token')
